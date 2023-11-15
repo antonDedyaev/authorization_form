@@ -20,13 +20,13 @@ const SideBar: FC = () => {
 				<FormInput
 					fieldName='password'
 					type='password'
-					placeholder='Password'
+					placeholder='Пароль'
 					icon='password_input-icon.svg'
 					required
 					minLength={6}
 				/>
 				<Button
-					text='Login'
+					text='Войти'
 					type='submit'
 				/>
 			</AuthorizationForm>
