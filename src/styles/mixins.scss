@@ -1,0 +1,28 @@
+@mixin display($size) {
+	width: #{$size}vw;
+	height: #{$size}vh;
+}
+
+@mixin circle($size, $bottom, $left) {
+	content: "";
+
+	position: absolute;
+	bottom: $bottom;
+	left: $left;
+
+	width: $size;
+	height: $size;
+
+	border-radius: $size;
+	border: 1px solid $blue;
+}
+
+@mixin main-header {
+	font-size: 40px;
+	font-weight: 700;
+}
+
+@mixin sub-text {
+	font-size: 18px;
+	font-weight: 500;
+}

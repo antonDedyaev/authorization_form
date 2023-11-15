@@ -1,0 +1,20 @@
+.button-container {
+	width: 100%;
+	height: 58px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	color: $white;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+
+	border-radius: 30px;
+	background: $blue;
+
+	&:hover {
+		background: $dark-blue;
+	}
+}

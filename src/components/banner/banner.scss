@@ -1,0 +1,43 @@
+.banner-container {
+	position: relative;
+
+	width: 60%;
+	height: 100vh;
+
+	display: none;
+	align-items: center;
+
+	background: $composite-blue;
+
+	overflow: hidden;
+
+	&::before {
+		@include circle(557px, -277px, -207px);
+	}
+
+	&:after {
+		@include circle(557px, -303px, -126px);
+	}
+
+	&__title {
+		margin-left: 20%;
+		margin-right: 20%;
+
+		color: $white;
+		font-style: normal;
+
+		h1 {
+			@include main-header;
+		}
+
+		p {
+			@include sub-text;
+		}
+	}
+}
+
+@media screen and (min-width: 840px) {
+	.banner-container {
+		display: flex;
+	}
+}
